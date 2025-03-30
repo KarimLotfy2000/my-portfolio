@@ -13,7 +13,7 @@ const Navbar = () => {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
         <Link
           href="/"
-          className="hidden sm:flexI w text-lg sm:text-xl font-bold text-green-500 tracking-tight"
+          className="hidden sm:flex w text-lg sm:text-xl font-bold text-green-500 tracking-tight"
         >
           KL
         </Link>
