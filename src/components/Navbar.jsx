@@ -10,10 +10,10 @@ const navItems = [
 const Navbar = () => {
   return (
     <div className="w-full mb-4 border-b border-border bg-background">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
         <Link
           href="/"
-          className="hidden sm:flex w text-lg sm:text-xl font-bold text-green-500 tracking-tight"
+          className="hidden sm:flex w- text-lg sm:text-xl font-bold text-green-500 tracking-tight"
         >
           KL
         </Link>

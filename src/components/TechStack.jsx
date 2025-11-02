@@ -1,9 +1,9 @@
 "use client";
 
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Server, Wrench, Palette } from "lucide-react";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { motion } from "framer-motion";
+import { Palette, Server, Wrench } from "lucide-react";
 
 const techStack = [
   {
@@ -14,19 +14,39 @@ const techStack = [
       "Next.js",
       "TypeScript",
       "TailwindCSS",
+      "MaterialUI",
       "Redux",
       "Storybook.js",
+      "Cypress",
     ],
   },
   {
     title: "Backend",
     icon: <Server className="text-green-700 w-5 h-5" />,
-    items: ["Java", "Spring Boot", "Node.js", "Express", "MongoDB", "MySQL"],
+    items: [
+      "Java",
+      "Spring Boot",
+      "JUnit",
+      "Node.js",
+      "Express",
+      "ORM frame-works (Hibernate, Sequelize)",
+      "MongoDB",
+      "MySQL",
+    ],
   },
   {
     title: "Tools & DevOps",
     icon: <Wrench className="text-green-700 w-5 h-5" />,
-    items: ["Git", "Docker", "Postman", "Jira", "Bitbucket"],
+    items: [
+      "Git",
+      "Docker",
+      "Kubernetes",
+      "CI/CD",
+      "Postman",
+      "Jira",
+      "Github",
+      "Bitbucket",
+    ],
   },
 ];
 
@@ -67,15 +87,19 @@ export default function TechStack() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {techStack.map((stack) => (
-            <motion.div key={stack.title} variants={cardVariants}>
-              <Card className="shadow-md dark:bg-card bg-accent border border-border hover:shadow-xl">
+            <motion.div
+              key={stack.title}
+              variants={cardVariants}
+              className="h-full"
+            >
+              <Card className="h-full flex flex-col shadow-md dark:bg-card bg-accent border border-border hover:shadow-xl">
                 <CardHeader className="flex items-center justify-between">
                   <CardTitle className="text-green-700 text-lg flex items-center gap-2">
                     {stack.icon}
                     {stack.title}
                   </CardTitle>
                 </CardHeader>
-                <CardContent className="flex flex-wrap gap-2 mt-2">
+                <CardContent className="flex-1 flex flex-wrap gap-2 mt-2">
                   {stack.items.map((tech) => (
                     <motion.div
                       whileHover={{

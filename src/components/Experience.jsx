@@ -26,7 +26,7 @@ const experience = [
     ],
   },
   {
-    company: "University of Duisburg-Essen",
+    company: "Bachelor Thesis Project - University of Duisburg-Essen ",
     role: "B.Sc. in Software Engineering",
     location: "Duisburg, Germany",
     date: "Nov 2019 – Nov 2024",

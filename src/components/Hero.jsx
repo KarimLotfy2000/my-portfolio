@@ -16,11 +16,11 @@ const Hero = () => {
           <h1 className="text-4xl sm:text-5xl font-bold text-foreground leading-tight">
             Hey, I’m <span className="text-green-500">Karim Lotfy</span> 👋
           </h1>
-          <p className="mt-4 text-muted-foreground text-lg">
-            I'm a full-stack developer with a B.Sc. in Software Engineering and
-            a strong focus on building clean, responsive, and user-friendly web
-            applications. I enjoy solving problems, learning new things, and
-            turning ideas into meaningful digital experiences.
+          <p className="mt-4 text-muted-foreground text-xl lg:text-2xl">
+            I’m a developer passionate about creating seamless digital
+            experiences from concept to deployment. I enjoy designing intuitive
+            interfaces, building reliable backend systems, and ensuring smooth
+            delivery through efficient development and DevOps practices
           </p>
         </motion.div>
         <motion.div

@@ -1,12 +1,27 @@
 "use client";
 
-import { motion } from "framer-motion";
-import Image from "next/image";
 import { Badge } from "@/components/ui/badge";
+import { motion } from "framer-motion";
 import { ExternalLink, Github } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 
 const projects = [
+  {
+    title: "IGerman",
+    description:
+      "Web-based language learning platform with role-based dashboards for students, teachers, and admins; teacher course and content management with lesson/material uploads; student course overviews, notifications and enrollment rules; and an admin dashboard for managing users, courses, teachers and approval workflows.",
+    image: "/igerman-screenshot.png",
+    tech: [
+      "Java Spring Boot",
+      "Spring Data JPA",
+      "MySQL",
+      "React",
+      "Redux",
+      "MaterialUI",
+    ],
+    live: "https://www.igerman-q.com/",
+  },
   {
     title: "Fashion Fusion (E-Commerce)",
     description:
